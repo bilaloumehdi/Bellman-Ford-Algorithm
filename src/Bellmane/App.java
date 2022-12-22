@@ -17,27 +17,27 @@ public class App {
 
 		Scanner clavier = new Scanner(System.in);
 
-		System.out.println("Entrer le nombre des sommets: ");
+		System.out.println("Enter the number of vertexes : ");
 		 vertexNumber = clavier.nextInt();
 
-		System.out.println("Entrer les noms des sommets: ");
+		System.out.println("Enter the Vertexes's name : ");
 		for(int i=0 ;i<vertexNumber ; i++) {
 			String name = clavier.next();
 			vertexList.add(new Vertex(name));
 		}
 
-		System.out.println("Entrer le nombre des arcs: ");
+		System.out.println("Enter the number of Edges : ");
 		 edgesNumber = clavier.nextInt();
 
 		for(int i=0 ; i<edgesNumber ; i++) {
 			System.out.println("Edge "+(i+1));
-			System.out.print("Entrer le nom du sommet origin: ");
+			System.out.print("Enter the vertex's start name : ");
 			 edgeOriginName = clavier.next();
 
-			System.out.print("\n Entrer le nom du sommet extrémité: ");
+			System.out.print("\n Enter the vertex's end name : ");
 			edgeFinalName = clavier.next();
 
-			System.out.print("\n Enter le poids de l'arc correspondant:  ");
+			System.out.print("\n Enter the weight of the Edge :  ");
 			weight= clavier.nextInt();
 
 			// search for the vertex's index that contains the corresponding name
@@ -60,74 +60,6 @@ public class App {
 
 		Scanner scanner = new Scanner(System.in);
 		scanner.nextLine();
-
-
-				/*
-				 * it just a first test:
-				 *
-				 * Vertex  A = new Vertex("A");
-				Vertex  B =	new Vertex("B");
-				Vertex  C = new Vertex("C");
-				Vertex  D = new Vertex("D");
-				Vertex  E = new Vertex("E");
-				Vertex  F = new Vertex("F");
-				Vertex  G = new Vertex("G");
-
-				vertexList.add(A);
-				vertexList.add(B);
-				vertexList.add(C);
-				vertexList.add(D);
-				vertexList.add(E);
-				vertexList.add(F);
-				vertexList.add(G);
-
-
-
-				Edge AB = new Edge(30,A,B);
-				Edge AE = new Edge(36,A,E);
-				Edge AG = new Edge(180,A,G);
-				Edge BC = new Edge(60,B,C);
-				Edge BD = new Edge(42,B,D);
-				Edge BE = new Edge(27,B,E);
-				Edge BF = new Edge(18,B,F);
-				Edge CG = new Edge(84,C,G);
-				Edge DC = new Edge(18,D,C);
-				Edge DG = new Edge(90,D,G);
-				Edge EC = new Edge(48,E,C);
-				Edge EF = new Edge(48,E,F);
-				Edge EG = new Edge(126,E,G);
-				Edge FA = new Edge(33,F,A);
-				Edge FC = new Edge(36,F,C);
-				Edge FD = new Edge(12,F,D);
-				Edge FG = new Edge(132,F,G);
-
-
-
-
-				edgesList.add(AB);
-				edgesList.add(AE);
-				edgesList.add(AG);
-				edgesList.add(BC);
-				edgesList.add(BD);
-				edgesList.add(BE);
-				edgesList.add(BF);
-				edgesList.add(CG);
-				edgesList.add(DC);
-				edgesList.add(DG);
-				edgesList.add(EC);
-				edgesList.add(EF);
-				edgesList.add(EG);
-				edgesList.add(FA);
-				edgesList.add(FC);
-				edgesList.add(FD);
-				edgesList.add(FG); */
-
-
-				/* BellmaneFord bellman = new BellmaneFord(vertexList,edgesList);
-				//bellman.shortestPaths(edgesList.get(0).getStartVertex(),edgesList.get(7).getTargetVertex());
-			    bellman.shortestPaths(vertexList.get(0)); */
-
-
 
 			}
 

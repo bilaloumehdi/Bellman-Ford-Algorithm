@@ -49,6 +49,7 @@ public class BellmaneFord {
 		// printing The result :
 		for(Vertex vertex : vertexList ) {
 			System.out.print(" \n Vertex :"+vertex.getName()+ ",  min distance= " + vertex.getMinDistance());
+
 			// printing the shortesPath to a vertex from the source
 			 System.out.print(" the shortest path form the source is (" + vertex.getName());
 
